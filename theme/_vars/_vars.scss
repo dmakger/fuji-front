@@ -1,0 +1,48 @@
+// ========== Font ==========
+
+// Font style
+$f-default: 'Montserrat-Medium', sans-serif;
+$f-heading: 'Montserrat-Bold', sans-serif;
+$f-subheading: 'Montserrat-SemiBold', sans-serif;
+$f-small: 'Montserrat-Regular', sans-serif;
+
+// Font size heading
+$fs-h1: 96px;
+$fs-h2: 72px;
+$fs-h3: 64px;
+$fs-h4: 48px;
+$fs-h5: 36px;
+$fs-h6: 24px;
+
+// Font size paragraph
+// [Large, SemiLarge, Medium, Regular, Small, ExtraSmall]
+$fs-lg-p: 24px;
+$fs-slg-p: 20px;
+$fs-md-p: 18px;
+$fs-rg-p: 16px;
+$fs-sm-p: 14px;
+$fs-esm-p: 12px;
+
+// Font color
+$fc-light: #fff;
+$fc-dark: #000;
+$fc-active: #2ED573;
+$fc-money: #5758BB;
+$fc-disable: #828282;
+
+
+// ========== Background ==========
+
+// Background color
+$bgc-light: #F7F7F8;
+$bgc-purple: #6E4AFF;
+$bgc-dark-purple: #1F173F;
+$bgc-green: #2ED573;
+$bgc-red: #ff6b6b;
+$bgc-blue: #0abde3;
+
+
+// ========== Width ==========
+
+// Max width
+$max-width: 1160px;
