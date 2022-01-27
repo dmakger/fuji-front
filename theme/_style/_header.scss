@@ -1,0 +1,39 @@
+header {
+  padding-top: 40px;
+
+  .header__body {
+    display: flex;
+
+    .case-logo {
+      margin: auto 0;
+
+      a.logo {
+        font-size: $fs-h5;
+      }
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+
+      a {
+        font-size: $fs-rg;
+      }
+
+      &__menu a{
+        &:not(&:first-child) {
+          margin-left: 36px;
+        }
+      }
+
+      #nav__sign {
+        margin-left: 70px;
+
+        a {
+          margin: auto;
+        }
+      }
+    }
+  }
+}

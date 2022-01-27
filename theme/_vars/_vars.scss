@@ -16,24 +16,30 @@ $fs-h6: 24px;
 
 // Font size paragraph
 // [Large, SemiLarge, Medium, Regular, Small, ExtraSmall]
-$fs-lg-p: 24px;
-$fs-slg-p: 20px;
-$fs-md-p: 18px;
-$fs-rg-p: 16px;
-$fs-sm-p: 14px;
-$fs-esm-p: 12px;
+$fs-lg: 24px;
+$fs-slg: 20px;
+$fs-md: 18px;
+$fs-rg: 16px;
+$fs-sm: 14px;
+$fs-esm: 12px;
+
+// Font size link
+$fs-a: $fs-md;
 
 // Font color
-$fc-light: #fff;
-$fc-dark: #000;
+$fc-white: #FFF;
+$fc-black: #000;
 $fc-active: #2ED573;
 $fc-money: #5758BB;
 $fc-disable: #828282;
+$fc-purple-gray: #524C6D;
 
 
 // ========== Background ==========
 
 // Background color
+$bgc-white: #FFF;
+$bgc-black: #000;
 $bgc-light: #F7F7F8;
 $bgc-purple: #6E4AFF;
 $bgc-dark-purple: #1F173F;

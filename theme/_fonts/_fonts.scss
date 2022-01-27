@@ -1,13 +1,13 @@
 @import "theme/_mixins/font-face";
 
 // font-family: 'Montserrat-Regular', sans-serif
-@include font('Montserrat-Regular', normal, 400, '/fonts/Montserrat/Montserrat-Regular.ttf');
+@include font('Montserrat-Regular', '/fonts/Montserrat/Montserrat-Regular.ttf');
 
 // font-family: 'Montserrat-Medium', sans-serif
-@include font('Montserrat-Medium', normal, 400, '/fonts/Montserrat/Montserrat-Medium.ttf');
+@include font('Montserrat-Medium', '/fonts/Montserrat/Montserrat-Medium.ttf');
 
 // font-family: 'Montserrat-SemiBold', sans-serif
-@include font('Montserrat-SemiBold', normal, 400, '/fonts/Montserrat/Montserrat-SemiBold.ttf');
+@include font('Montserrat-SemiBold', '/fonts/Montserrat/Montserrat-SemiBold.ttf');
 
 // font-family: 'Montserrat-Bold', sans-serif
-@include font('Montserrat-Bold', normal, 400, '/fonts/Montserrat/Montserrat-Bold.ttf');
+@include font('Montserrat-Bold', 'static/fonts/Montserrat/Montserrat-Bold.ttf');

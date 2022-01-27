@@ -1,0 +1,143 @@
+.base {
+  background-color: $bgc-purple;
+  padding: 50px 0 100px;
+
+  &__body {
+    display: flex;
+    color: $fc-white;
+
+    .base__info {
+      max-width: 765px;
+      margin: 40px 0;
+
+      p {
+        font-size: $fs-lg;
+      }
+    }
+
+    .base__icon {
+      margin-left: auto;
+
+      img {
+        width: 360px;
+        height: 360px;
+      }
+    }
+  }
+}
+
+.section {
+  background-color: $bgc-light;
+  padding: 120px 0 150px;
+
+  &__header {
+    margin: 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      text-align: center;
+    }
+
+    .line {
+      margin-top: 5px;
+      width: 188px;
+      height: 10px;
+      background-color: $bgc-dark-purple;
+    }
+  }
+
+  &__content {
+    margin-top: 120px;
+
+    .section__card {
+      background-color: $bgc-dark-purple;
+      border-radius: 20px;
+      transition-duration: .3s;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      &:not(&:last-child) {
+        margin-bottom: 40px;
+      }
+
+      .item-section {
+        margin: 0 160px;
+        display: flex;
+
+        &__text {
+          width: 440px;
+          margin: 100px 0 85px;
+          color: $fc-white;
+
+          .item-section__description {
+            margin-top: 20px;
+          }
+
+          .item-section__link {
+            display: flex;
+            margin-top: 40px;
+
+            a {
+              border-radius: 20px;
+              border: $bgc-white 1px solid;
+              color: $fc-white;
+              padding: 20px 60px;
+              transition-duration: .3s;
+
+              &:hover {
+                padding: 20px 80px;
+                transition-duration: .3s;
+                font-family: $f-heading;
+                border: $bgc-purple 1px solid;
+                color: $bgc-purple;
+              }
+            }
+          }
+        }
+
+        &__icon {
+          margin: auto 0 auto auto;
+        }
+      }
+    }
+  }
+}
+
+.mobile {
+  background-color: $bgc-purple;
+
+  &__body {
+    display: flex;
+    padding: 180px 0;
+
+    .mobile__text {
+      color: $fc-white;
+      margin: auto 0;
+
+      .mobile__description {
+        margin-top: 10px;
+        font-size: $fs-slg;
+      }
+
+      .mobile__google-play {
+        margin-top: 50px;
+
+        img {
+          width: 270px;
+        }
+      }
+    }
+    .mobile__icon {
+      margin-left: auto;
+
+      img {
+        width: 315px;
+      }
+    }
+  }
+}

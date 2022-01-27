@@ -1,0 +1,44 @@
+// $f-color-main: color text
+// $f-color: button color text
+// $bg-color: background color
+@mixin header-light($f-color-main, $f-color-button, $bg-color){
+  header {
+    background-color: $bg-color;
+
+    a{
+      color: $f-color-main;
+    }
+
+    .nav {
+      &__menu a {
+        border-bottom: $bg-color 2px solid;
+        transition-duration: .3s;
+
+        &:hover {
+          transition-duration: .3s;
+          border-bottom: $f-color-main 2px solid;
+          padding-bottom: 3px;
+        }
+      }
+
+      #nav__sign {
+        display: flex;
+
+        a {
+          padding: 15px 30px;
+          background-color: $f-color-main;
+          border-radius: 40px;
+          border: $bg-color 5px solid;
+          transition-duration: .3s;
+          color: $f-color-button;
+
+          &:hover {
+            border: $f-color-main 5px solid;
+            transition-duration: .3s;
+          }
+        }
+      }
+
+    }
+  }
+}
