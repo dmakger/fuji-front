@@ -35,7 +35,7 @@
 }
 
 @mixin header-rofl($f-color-main, $f-color-button, $bg-color){
-  @include header-style-default($f-color-main, $f-color-button, $bg-color);
+  @include header-style-default($f-color-main, $f-color-main, $bg-color);
 
   header {
     padding-top: 0;
@@ -52,7 +52,7 @@
   }
 
   header #nav__sign a{
-    padding: 15px 30px;
+    padding: 20px 35px;
     border-radius: 40px;
     transition-duration: .3s;
 

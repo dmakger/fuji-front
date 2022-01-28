@@ -30,6 +30,6 @@ export default{
 
 <style lang="scss" scoped>
 @import "../theme/_style/header";
-@include header-rofl($fc-black, $fc-white, $bgc-empty);
+@include header-rofl($fc-white, $fc-black, $bgc-empty);
 
 </style>
