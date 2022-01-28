@@ -33,7 +33,7 @@
                     <h5 class="item-section__title">Курсы</h5>
                     <p class="item-section__description">Серия из лекций позволяющая изучить какой-либо предмет или обучиться навыку</p>
                     <div class="item-section__link">
-                      <nuxt-link to="/courses">Перейти</nuxt-link>
+                      <nuxt-link to="/course">Перейти</nuxt-link>
                     </div>
                   </div>
                   <div class="item-section__icon">

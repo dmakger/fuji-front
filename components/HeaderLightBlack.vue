@@ -8,7 +8,7 @@
 
         <nav class="nav">
           <div class="nav__menu">
-            <nuxt-link to="/courses" class="item-nav__menu">Курсы</nuxt-link>
+            <nuxt-link to="/course" class="item-nav__menu">Курсы</nuxt-link>
             <nuxt-link to="/" class="item-nav__menu">Лекции</nuxt-link>
             <nuxt-link to="/" class="item-nav__menu">Организации</nuxt-link>
           </div>
@@ -31,4 +31,5 @@ export default{
 <style lang="scss" scoped>
 @import "../theme/_style/header";
 @include header-black($fc-black, $bgc-purple, $bgc-light);
+
 </style>
