@@ -43,6 +43,7 @@ $bgc-black: #000;
 $bgc-light: #F7F7F8;
 $bgc-purple: #6E4AFF;
 $bgc-dark-purple: #1F173F;
+$bgc-light-purple: #9F8BEE;
 $bgc-green: #2ED573;
 $bgc-red: #ff6b6b;
 $bgc-blue: #0abde3;
@@ -52,3 +53,8 @@ $bgc-blue: #0abde3;
 
 // Max width
 $max-width: 1160px;
+
+// ========== box-shadow ==========
+$box-shadow-purple: rgba(159, 139, 238, 0.25);
+$box-shadow-dark-light: rgba(0, 0, 0, 0.1);
+$box-shadow-dark: rgba(0, 0, 0, 0.15);

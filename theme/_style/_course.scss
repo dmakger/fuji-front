@@ -1,0 +1,301 @@
+.title {
+  background-color: $bgc-light;
+  padding-top: 100px;
+}
+
+.search {
+  background-color: $bgc-light;
+  padding-top: 130px;
+
+  .search__body .myself-search form {
+    width: 100%;
+
+    input[name='q'] {
+      font-size: 18px;
+      font-family: $f-small;
+      width: 93%;
+      background-color: $bgc-white;
+      padding: 24px 10px 24px 50px;
+      border-radius: 40px 0 0 40px;
+      border: white 0 solid;
+      outline: none;
+    }
+
+    .myself-search__send {
+      width: 7%;
+      height: 70px;
+      float: right;
+      border-radius: 0 40px 40px 0;
+      margin-bottom: 60px;
+      background-color: $bgc-purple;
+
+      input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: url(static/img/search__white.png) no-repeat 50% 50%;
+      }
+    }
+  }
+}
+
+.sorting {
+  background-color: $bgc-light;
+  padding-top: 60px;
+
+  &__body {
+    margin-left: 30px;
+    display: flex;
+
+    .item-sorting {
+      display: flex;
+      cursor: pointer;
+      color: $fc-disable;
+
+      &:not(&:last-child) {
+        margin-right: 20px;
+      }
+
+      img {
+        margin-left: 8px;
+        display: none;
+      }
+
+      &_activate {
+        color: $fc-black;
+
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.course-raw {
+  background-color: $bgc-light;
+  padding-top: 30px;
+
+  .course-raw__body {
+    display: grid;
+    grid: 600px auto;
+    grid-template-columns: 1fr 1fr;
+
+    .course-raw__course {
+      width: 760px;
+      margin-bottom: 30px;
+
+      .item-course__wrapper {
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 30px 30px 25px;
+        color: #000;
+        transition-duration: .3s;
+        margin-bottom: 40px;
+
+        &:hover {
+          transition-duration: .2s;
+          box-shadow: 0 14px 28px $box-shadow-dark-light, 0 10px 10px $box-shadow-dark;
+        }
+
+        .item-course__main-info {
+          display: flex;
+
+          .item-course__icon {
+            width: 300px;
+            height: 225px;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            img {
+              width: auto;
+              height: 100%;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+            }
+          }
+
+          .item-course__text {
+            width: 370px;
+            margin-left: auto;
+
+            .item-course__title {
+              font-family: $f-subheading;
+              font-size: $fs-lg;
+              margin-top: 15px;
+            }
+
+            .item-course__author {
+              font-family: $f-subheading;
+              margin-top: 10px;
+            }
+
+            .item-course__description {
+              margin-top: 20px;
+            }
+          }
+        }
+
+        .item-course__info {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          margin-top: 35px;
+          margin-bottom: 25px;
+        }
+
+        .info-item-course {
+          display: flex;
+
+          .info-item-course__tag {
+            display: flex;
+
+            &:not(:last-child) {
+              margin-right: 40px;
+            }
+
+            img {
+              width: 22px;
+              height: 22px;
+            }
+
+            p {
+              margin-left: 10px;
+            }
+          }
+        }
+
+        .item-course__price {
+          display: flex;
+          margin-left: auto;
+
+          img {
+            width: 22px;
+            height: 22px;
+            margin: auto 0;
+          }
+
+          .green {
+            color: $fc-active;
+          }
+
+          .purple {
+            color: $fc-money;
+            font-family: $f-subheading;
+            font-size: $fs-lg;
+          }
+        }
+      }
+    }
+
+    .filter {
+      margin-left: 40px;
+      background-color: $bgc-white;
+      border-radius: 20px;
+      padding: 50px;
+
+      position: sticky;
+      top: 20px;
+      margin-bottom: 70px;
+
+      .item-filter:not(:last-child) {
+        margin-bottom: 40px;
+      }
+
+      .item-filter__content {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+
+        input {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+
+          & + label {
+            display: inline-flex;
+            user-select: none;
+            margin-top: 15px;
+            max-width: 220px;
+
+            &::before {
+              content: '';
+              display: inline-block;
+              width: 18px;
+              height: 18px;
+              flex-shrink: 0;
+              flex-grow: 0;
+              border: 1px solid $fc-disable;
+              border-radius: 50%;
+              margin-right: 10px;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+          }
+
+          &:not(:disabled) {
+            /* При наведение на input */
+            &:not(:checked) + label:hover::before {
+              border-color: $bgc-black;
+            }
+
+            /* Для активной input (при нажатии на неё) */
+            &:active + label::before {
+              border-color: $bgc-purple;
+              background-color: $bgc-purple;
+            }
+          }
+
+          &:focus {
+            & + label::before {
+              box-shadow: 0 0 0 0.2rem $box-shadow-purple;
+            }
+
+            &:not(:checked) + label::before {
+              border-color: $bgc-light-purple;
+            }
+          }
+
+          &:checked + label::before {
+            border-color: $bgc-black;
+            background-color: $bgc-white;
+          }
+
+          &:disabled + label::before {
+            background-color: $bgc-light;
+          }
+
+        }
+      }
+
+      .checkbox input {
+        /* input[checkbox] загругление границ */
+        & + label::before {
+          border-radius: 3px;
+        }
+
+        /* input[checkbox] внутренний изображение внутри input */
+        &:checked + label::before {
+          background-image: url(static/img/checkbox_active.png);
+        }
+      }
+
+      .radio input {
+        /* input[radio] загругление границ */
+        & + label::before {
+          border-radius: 50%;
+          background-size: 12px;
+        }
+
+        /* input[checkbox] внутренний изображение внутри input */
+        &:checked + label::before {
+          background-image: url(static/img/ellipse_purple.png);
+        }
+      }
+    }
+  }
+}
