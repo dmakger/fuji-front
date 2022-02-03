@@ -37,12 +37,11 @@
       text-align: center;
 
       .main__author {
-        //font-family: $f-subheading;
         font-size: $fs-lg;
       }
 
       .main__link {
-        margin-top: 60px;
+        margin-top: 40px;
         display: flex;
         justify-content: center;
 
@@ -57,12 +56,10 @@
           transition-duration: .3s;
 
           &:hover {
-            //background-color: $bgc-white;
+            background-color: $bgc-purple;
             font-family: $f-heading;
-            //padding: 25px 85px;
-            color: $bgc-green;
             transition-duration: .3s;
-            border: 4px $bgc-green solid;
+            border: 4px $bgc-purple solid;
           }
 
         }
@@ -134,26 +131,175 @@
   background: linear-gradient($bgc-dark, $bgc-dark2);
 }
 
+.block__body {
+  color: $fc-white;
+
+  .title__wrapper {
+    display: flex;
+
+    h3.title_border-bottom {
+      border-bottom: $bgc-purple 5px solid;
+    }
+  }
+
+  .block__content {
+    margin-top: 40px;
+
+    p.block__description {
+      font-size: $fs-lg;
+      font-family: $f-default;
+    }
+  }
+}
+
 .goal {
   padding-top: 150px;
 
-  .goal__body {
-    color: $fc-white;
+  .goal__body .goal__description {
+      padding-left: 20px;
+      border-left: $bgc-purple 5px solid;
+  }
+}
 
-    .goal__title__wrapper {
+.fit {
+  padding-top: 100px;
+
+  .item-fit {
+    display: flex;
+
+    &:not(&:last-child) {
+      margin-bottom: 30px;
+    }
+
+    h5 {
+      max-width: 360px;
+    }
+
+    p {
+      margin-left: 100px;
+      max-width: 700px;
+    }
+  }
+}
+
+.skill {
+  padding-top: 100px;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(580px, 1fr));
+    //grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill__card {
+    padding-left: 40px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    cursor: pointer;
+
+    &:hover .item-skill__count {
+      background-color: $bgc-purple;
+      transition-duration: .3s;
+    }
+
+    .item-skill {
       display: flex;
+      align-items: center;
 
-      .goal__title {
-        border-bottom: $bgc-purple 5px solid;
+      &__count {
+        min-width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px $bgc-purple solid;
+        border-radius: 50%;
+        transition-duration: .1s;
+
+        h5 {
+          font-family: $f-default;
+        }
+        }
+      &__description {
+        //max-width: 360px;
+        width: 100%;
+        margin-left: 80px;
+      }
+    }
+  }
+}
+
+.certificate {
+  padding-top: 100px;
+
+  .certificate__body {
+    display: flex;
+
+    .certificate__text {
+      margin-right: 40px;
+      margin-top: 0;
+
+      .certificate__description {
+        margin-top: 40px;
+      }
+
+      .certificate__author__wrapper {
+        display: flex;
+        margin-top: 40px;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+        p {
+          margin: auto 0 auto 20px;
+          font-size: $fs-lg;
+        }
       }
     }
 
-    .goal__description {
-      margin-top: 40px;
-      padding-left: 20px;
-      border-left: $bgc-purple 5px solid;
-      font-size: $fs-lg;
-      font-family: $f-small;
+    .certificate__title-image {
+      width: 560px;
+    }
+  }
+}
+
+.title_center {
+  text-align: center;
+}
+
+.info {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: $bgc-dark2;
+  color: $fc-white;
+
+  &-general {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+
+    .info-general__card {
+      &:not(&:last-child) {
+        margin-right: 40px;
+      }
+
+      .item-info-general {
+        &__title-block {
+          width: 160px;
+          height: 90px;
+          background-color: $bgc-purple;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &__description {
+          font-family: $f-subheading;
+          font-size: $fs-lg;
+          text-align: center;
+          margin-top: 5px;
+        }
+      }
     }
   }
 }

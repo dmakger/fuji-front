@@ -27,13 +27,13 @@
 
         <div class="footer__media">
           <nuxt-link to="#" class="footer__media-link">
-            <img src="img/instagram.png" alt="Мы в инсте">
+            <img src="~/static/img/instagram.png" alt="Мы в инсте">
           </nuxt-link>
           <nuxt-link to="#" class="footer__media-link">
-            <img src="img/vk.png" alt="Группа в вк">
+            <img src="~/static/img/vk.png" alt="Группа в вк">
           </nuxt-link>
           <nuxt-link to="#" class="footer__media-link">
-            <img src="img/telegram.svg" alt="Группа в вк">
+            <img src="~/static/img/telegram.svg" alt="Группа в вк">
           </nuxt-link>
         </div>
       </div>

@@ -67,7 +67,7 @@
                     </div>
                     <div class="item-course__text">
                       <p class="item-course__title">{{ course.title }}</p>
-                      <p class="item-course__author">{{ course.author }}</p>
+                      <p class="item-course__author">{{ course.author.name }}</p>
                       <p class="item-course__description">{{ course.description }}</p>
                     </div>
                   </div>

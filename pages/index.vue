@@ -37,7 +37,7 @@
                     </div>
                   </div>
                   <div class="item-section__icon">
-                    <img src="img/book.svg" alt="Карандаш">
+                    <img src="img/book.svg" alt="Книга">
                   </div>
                 </div>
               </div>
@@ -65,7 +65,7 @@
                     </div>
                   </div>
                   <div class="item-section__icon">
-                    <img src="img/sheet.svg" alt="Карандаш">
+                    <img src="img/sheet.svg" alt="Лист">
                   </div>
                 </div>
               </div>
